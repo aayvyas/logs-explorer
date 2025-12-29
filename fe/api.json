@@ -1,0 +1,148 @@
+{
+    "collection": {
+        "info": {
+            "_postman_id": "0201df9f-b330-474a-aba4-7ca1c74c2d52",
+            "name": "log-explorer",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "createdAt": "2025-12-29T03:49:34.000Z",
+            "updatedAt": "2025-12-29T11:08:50.000Z",
+            "lastUpdatedBy": "22793627",
+            "uid": "22793627-0201df9f-b330-474a-aba4-7ca1c74c2d52"
+        },
+        "item": [
+            {
+                "name": "upload",
+                "id": "451c08c9-a82c-4a64-81f8-3aeaa30744a6",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "file",
+                                "type": "file",
+                                "uuid": "4ec00268-4913-42cc-8791-60ff5f2e3d52",
+                                "src": "/Users/aayvyas/Downloads/downloaded-logs-20251208-150657.json"
+                            },
+                            {
+                                "key": "description",
+                                "value": "GCP Logs for vescape",
+                                "type": "text",
+                                "uuid": "d0b41d8e-c3ee-4bbe-86b5-175ee3b2ea56"
+                            },
+                            {
+                                "key": "tags",
+                                "value": "INC23123123, P2",
+                                "type": "text",
+                                "uuid": "ba558b57-d5aa-4c37-9511-3c2ea3a9aceb"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "raw": "{{baseURL}}/api/logs/upload",
+                        "host": [
+                            "{{baseURL}}"
+                        ],
+                        "path": [
+                            "api",
+                            "logs",
+                            "upload"
+                        ]
+                    }
+                },
+                "response": [],
+                "createdAt": "2025-12-29T03:49:52.000Z",
+                "updatedAt": "2025-12-29T11:07:54.000Z",
+                "uid": "22793627-451c08c9-a82c-4a64-81f8-3aeaa30744a6"
+            },
+            {
+                "name": "search",
+                "id": "df886e79-17bf-46f2-a8cf-4571311eacaf",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{}",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "{{baseURL}}/api/logs/27761a39-3732-4780-989f-3bbb40e0a317/search",
+                        "host": [
+                            "{{baseURL}}"
+                        ],
+                        "path": [
+                            "api",
+                            "logs",
+                            "27761a39-3732-4780-989f-3bbb40e0a317",
+                            "search"
+                        ]
+                    }
+                },
+                "response": [],
+                "createdAt": "2025-12-29T03:57:59.000Z",
+                "updatedAt": "2025-12-29T11:07:54.000Z",
+                "uid": "22793627-df886e79-17bf-46f2-a8cf-4571311eacaf"
+            },
+            {
+                "name": "getAll",
+                "id": "d8ee416a-6ea9-46ad-a4ad-d5b33e401ff5",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                        "raw": "{{baseURL}}/api/logs/files",
+                        "host": [
+                            "{{baseURL}}"
+                        ],
+                        "path": [
+                            "api",
+                            "logs",
+                            "files"
+                        ]
+                    }
+                },
+                "response": [],
+                "createdAt": "2025-12-29T11:04:33.000Z",
+                "updatedAt": "2025-12-29T11:07:54.000Z",
+                "uid": "22793627-d8ee416a-6ea9-46ad-a4ad-d5b33e401ff5"
+            },
+            {
+                "name": "fields",
+                "id": "f5fcbddf-65d1-412f-9c07-e859fa6f7927",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": []
+                },
+                "response": [],
+                "createdAt": "2025-12-29T11:08:50.000Z",
+                "updatedAt": "2025-12-29T11:31:52.000Z",
+                "uid": "22793627-f5fcbddf-65d1-412f-9c07-e859fa6f7927"
+            }
+        ],
+        "variable": [
+            {
+                "key": "baseURL",
+                "value": "",
+                "type": "default"
+            }
+        ]
+    }
+}
