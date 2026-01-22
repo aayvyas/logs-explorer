@@ -1,20 +1,16 @@
 package com.aayvyas.log_explorer.core.ingestion;
 
 import java.io.InputStream;
-import java.time.Instant;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
+
+import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-
-import org.springframework.stereotype.Component;
-
-import com.aayvyas.log_explorer.model.LogEntry;
 
 @Component
 public class JacksonStreamLogParser implements LogParser {

@@ -1,11 +1,7 @@
 package com.aayvyas.log_explorer.api.controller;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +21,6 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
 import com.aayvyas.log_explorer.core.LogService;
-import com.aayvyas.log_explorer.model.LogEntry;
 import com.aayvyas.log_explorer.model.LogFileMetadata;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

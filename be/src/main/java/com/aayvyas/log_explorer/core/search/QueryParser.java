@@ -1,6 +1,5 @@
 package com.aayvyas.log_explorer.core.search;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
